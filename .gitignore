@@ -1,0 +1,52 @@
+# 1. Operating System Artifacts (WSL2 / Windows / macOS)
+desktop.ini
+Thumbs.db
+.DS_Store
+*~
+.fuse_hidden*
+
+# 2. IDE & Editor Configurations
+# GoLand / IntelliJ
+.idea/
+*.iml
+# VS Code (Prepared for frontend/dashboard development)
+.vscode/
+*.code-workspace
+
+# 3. Go Core Tooling & Build Artifacts
+# Compiled binaries
+/protocol/cmd/lightclient/lightclient
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Testing and Coverage
+*.test
+*.out
+coverage.html
+/protocol/c.out
+
+# Go vendor directory (if utilizing vendoring instead of module cache)
+/protocol/vendor/
+
+# 4. Storage, Sync, and Blockchain State
+# Pebble DB and generic local data stores
+/protocol/storage/data/LOCK
+*.ldb
+*.sst
+
+# 5. Secrets and Environment Variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 6. Frontend Dashboard (Preparation)
+/dashboard/node_modules/
+/dashboard/dist/
+/dashboard/build/
+/dashboard/.eslintcache
+
